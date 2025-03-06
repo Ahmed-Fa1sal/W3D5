@@ -6,6 +6,11 @@
       <h3>{{ product.name }}</h3>
       <p>{{ product.description }}</p>
       <p><strong>Price:</strong> ${{ product.price }}</p>
+      
+      <!-- Add to Cart button -->
+      <button (click)="addToCart(product)">Add to Cart</button>
+      
+      <!-- View Details button (Navigates to product detail page) -->
       <button [routerLink]="['/product', product.id]">View Details</button>
     </div>
   </li>

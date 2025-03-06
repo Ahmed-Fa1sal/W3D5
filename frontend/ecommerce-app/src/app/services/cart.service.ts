@@ -1,25 +1,23 @@
 import { Injectable } from '@angular/core';
-import { Product } from './product.service';  // Import the Product model
+import { Product } from './product.service'; // Adjust if path is different
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class CartService {
-  private cartItems: Product[] = [];
+  private cart: Product[] = [];
 
-  // Add product to cart
+  getCart(): Product[] {
+    return this.cart;
+  }
+
   addToCart(product: Product): void {
-    this.cartItems.push(product);
-    console.log(`Added to cart: ${product.name}`);
+    this.cart.push(product);
   }
 
-  // Get all items in the cart
-  getCartItems(): Product[] {
-    return this.cartItems;
+  removeFromCart(product: Product): void {
+    this.cart = this.cart.filter(p => p.id !== product.id);
   }
 
-  // Get the number of items in the cart
-  getCartCount(): number {
-    return this.cartItems.length;
+  clearCart(): void {
+    this.cart = [];
   }
 }
