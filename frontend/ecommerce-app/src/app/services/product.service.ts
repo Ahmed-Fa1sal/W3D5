@@ -10,9 +10,7 @@ export interface Product {
   imageUrl: string;
 }
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class ProductService {
   private apiUrl = 'http://localhost:5015/api/products';
 
@@ -20,5 +18,10 @@ export class ProductService {
 
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.apiUrl);
+  }
+
+  // Add this method to fetch a single product by ID
+  getProductById(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.apiUrl}/${id}`);
   }
 }

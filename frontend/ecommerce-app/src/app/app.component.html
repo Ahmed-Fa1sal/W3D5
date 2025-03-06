@@ -1,9 +1,17 @@
 <header>
   <h1>E-Commerce App</h1>
+  <!-- Optional Navigation -->
+  <nav>
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+      <!-- Other nav links can go here -->
+    </ul>
+  </nav>
 </header>
 
 <main>
-  <app-product-list></app-product-list>
+  <!-- Router outlet to render the components based on the active route -->
+  <router-outlet></router-outlet>
 </main>
 
 <footer>
