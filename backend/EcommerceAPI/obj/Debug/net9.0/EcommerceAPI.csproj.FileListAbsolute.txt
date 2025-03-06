@@ -34,3 +34,4 @@ C:\Users\DerRi\w3d5\backend\EcommerceAPI\obj\Debug\net9.0\ref\EcommerceAPI.dll
 C:\Users\DerRi\w3d5\backend\EcommerceAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\DerRi\w3d5\backend\EcommerceAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\DerRi\w3d5\backend\EcommerceAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\DerRi\w3d5\backend\EcommerceAPI\obj\Debug\net9.0\EcommerceAPI.sourcelink.json
